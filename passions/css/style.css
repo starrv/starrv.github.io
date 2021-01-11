@@ -1,0 +1,178 @@
+body
+{
+	background:#624b80;
+  font-family: 'Playfair Display', serif;
+}
+
+input
+{
+	box-shadow: 5px 5px 5px #333;
+}
+
+.container-fluid
+{
+	overflow-x: hidden;
+	background:linear-gradient(#ddd,#624b80);
+}
+
+#top
+{
+	background:white;
+}
+
+li
+{
+	list-style: none;
+}
+
+body
+{
+	overflow-x:hidden;
+}
+
+
+#content ul
+{
+	color:	#222;
+}
+
+#introduction
+{
+	animation:animation1 15s infinite linear normal;
+	-webkit-animation: animation1 15s infinite linear normal;
+	position:relative;
+	height:50px;
+	width:100%;
+	background-repeat:repeat-x;
+}
+
+
+#title
+{
+	background-image:url('../images/Passions.jpg');
+	background-position: top center;
+	background-repeat: repeat-x;
+	background-size: contain;
+	background-color: black;
+	height:200px;
+	white-space: nowrap;
+}
+
+#menu a
+{
+	color:#fff;
+}
+
+.characters a, figure
+{
+	animation:animation2 10s infinite;
+	-webkit-animation: animation2 10s infinite;
+}
+
+a
+{
+	white-space:nowrap;
+}
+
+.characters li a
+{
+	background:radial-gradient(#333 1%,#572270);
+	border:solid 1px #eee;
+	border-radius: 100px;
+	display: block;
+	height: 150px;
+	width: 150px;
+	white-space: normal;
+	text-align: center;
+	vertical-align: middle;
+	overflow: hidden;
+	color:#eee;
+	box-shadow: 5px 5px 5px #333;
+}
+
+.characters li a:hover
+{
+	background:radial-gradient(#aaa 1%, #572270);
+}
+
+a:hover
+{
+	text-decoration: none;
+	font-style: italic;
+	font-weight: 900;
+	color:#fff;
+}
+
+#pictureBennettFamily
+{
+	background-image:url('../images/BennettFamily.jpg');
+}
+
+#pictureCraneFamily
+{
+	background-image:url('../images/CraneFamily.jpg');
+}
+
+#pictureLenoxFamily
+{
+	background-image:url('../images/LenoxFamily.jpg');
+}
+
+#pictureLopez-FitzgeraldFamily
+{
+	background-image:url('../images/Lopez-FitzgeraldFamily.jpg');
+	width:100%;
+	height:200px;
+}
+
+#pictureRussellFamily
+{
+	background-image:url('../images/RussellFamily.jpg');
+}
+
+#pictureWallaceFamily
+{
+	background-image:url("../images/WallaceFamily.jpg");
+}
+
+a:hover
+{
+	text-decoration: underline;
+}
+
+hr
+{
+	background:#fff;
+}
+
+@keyframes animation1
+{
+	0%  {left: 100%; top:0px;color: #333;}
+	25%  {left: 50%; top:0px;color: #0b1d40;}
+	50%  {left: 0%; top:0px;color: #222;}
+	75%  {left: -25%; top:0px;color: #540d3d;}
+	100% {left: -100%; top:0px;color: #06290b;}
+}
+
+@-webkit-keyframes animation1 /* Safari and Chrome */
+{
+	0%  {left: 100%; top:0px;color: #333;}
+	25%  {left: 50%; top:0px;color: #0b1d40;}
+	50%  {left: 0%; top:0px;color: #222;}
+	75%  {left: -25%; top:0px;color: #540d3d;}
+	100% {left: -100%; top:0px;color: #06290b;}
+}
+
+@keyframes animation2
+{
+	0% {color: #fff;}
+	90% {color: #fff;}
+	100% {color: #111;}
+}
+
+@-webkit-keyframes animation2 /* Safari and Chrome */
+{
+	0% {color: #fff;}
+	90% {color: #fff;}
+	100% {color: #111;}
+}

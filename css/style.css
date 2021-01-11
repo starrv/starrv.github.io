@@ -1,0 +1,14 @@
+.img-fluid
+{
+	 width: 100% \9;
+}
+
+body
+{
+  font-family: 'Montserrat', sans-serif;
+}
+
+#backgroundImg, #resume
+{
+	height:600px;
+}

@@ -1,0 +1,19 @@
+img
+{
+	border:solid 1px #333;
+	border-radius: 100px;
+	width:150px;
+	height:150px;
+	background:black;
+	box-shadow: 5px 5px 5px black;
+}
+
+.pic:hover img
+{
+	border: solid 2px white;
+	border-radius: 100px;
+}
+a:hover
+{
+	text-decoration: underline;
+}
