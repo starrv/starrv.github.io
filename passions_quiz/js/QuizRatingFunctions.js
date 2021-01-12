@@ -52,7 +52,8 @@ $(document).ready(function()
 
 	}
 
-	$( window ).onbeforeunload=function() {
+	$( window ).onbeforeunload=function()
+	{
 	  confirm("You have are navigating away from the page.  Are you sure you want to leave?");
 	};
 
@@ -110,6 +111,7 @@ $(document).ready(function()
 		display();
 		animate();
 	}
+	
 	function animate()
 	{
 		stepOne=setTimeout(function(){$("#text").text(waitMessage+" .")},1000);
@@ -238,6 +240,7 @@ $(document).ready(function()
 			 //setTimeout(function(){unDisplay();}, 300000);
 		 }
 	}
+
 	function display()
 	{
 		$("#dialog").slideDown();
