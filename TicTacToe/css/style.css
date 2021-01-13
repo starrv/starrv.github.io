@@ -5,18 +5,17 @@ html
 }
 body
 {
-	background:radial-gradient(white,green);
 	background-repeat: no-repeat;
 }
 th, td
 {
-	height:200px;
+	height:150px;
 	background:orange;
 	border:solid 1px black;
 	border-radius:10px;
 	width:33%;
 	box-sizing: border-box;
-	font-size:22px;
+	font-size:36px;
 }
 table
 {
@@ -42,11 +41,11 @@ th:hover, td:hover
 }
 h1
 {
-	font-size:72px;
+	font-size:36px;
 }
 h2
 {
-	font-size:36px;
+	font-size:24px;
 }
 button
 {
@@ -65,11 +64,8 @@ button:hover
 #display
 {
 	width:25%;
-	position: fixed;
-	left:38%;
-	top:45%;
 	background:rgba(255,255,255,.5);
-	margin:auto;
+	margin:0 auto;
 	border-radius:10px;
 	padding:1%;
 	display: none;

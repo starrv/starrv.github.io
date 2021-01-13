@@ -45,9 +45,6 @@ function start()
 			{
 				document.querySelector("#display").innerHTML=winner+" you won";
 			}
-			setTimeout(function(){
-					reset();
-					},2000);
 		}
 	}
 	function makeMove(box)
@@ -139,14 +136,6 @@ function start()
 			}
 			//console.log(" ");
 		}
-		if(isCompleted)
-		{
-			console.log("completed");
-		}
-		else
-		{
-			console.log("not completed");
-		}
 		return isCompleted;
 	}
 
@@ -179,7 +168,7 @@ function start()
 	function init()
 	{
 		reset();
-		scaleIt();
+		//scaleIt();
 	}
 
 	function addScaleItListener()
@@ -201,7 +190,7 @@ function start()
 	init();
 	addMakeMoveListeners();
 	addResetListener();
-	addScaleItListener();
+	//addScaleItListener();
 
 }
 start();

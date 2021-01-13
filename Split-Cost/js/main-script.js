@@ -25,26 +25,6 @@ $("document").ready(function()
 		$(this).css("color","white");
 	});
 
-	$("body").change(function()
-	{
-		var element=$(this);
-	});
-
-	$("body").resize(function()
-	{
-		var element=$(this);
-	});
-
-	$(".container").resize(function()
-	{
-		var element=$(this);
-	});
-
-	$(".container").change(function()
-	{
-		var element=$(this);
-	});
-
 	$("#greetingsDiv").fadeIn(fadeTime);
 
 	$("#back-1").click(function()
@@ -89,13 +69,11 @@ $("document").ready(function()
 			var newHTML="";
 			for(var numOfPeople=0; numOfPeople<numOfGuests; numOfPeople++)
 			{
-				 newHTML+="<div class='guessNameDiv form-group'><label for='input"+numOfPeople+"'>Enter guess name "+(numOfPeople+1)+"</label><br><input type='text' id='input"+numOfPeople+"' class='guessNames form-control col-4 mx-auto' placeholder='guest "+(numOfPeople+1)+"' autocomplete='on'></div>";
+				 newHTML+="<div class='guessNameDiv form-group'><label for='input"+numOfPeople+"'>Enter guess name "+(numOfPeople+1)+"</label><br><input type='text' id='input"+numOfPeople+"' class='guessNames form-control col-sm-4 mx-auto' placeholder='guest "+(numOfPeople+1)+"' autocomplete='on'></div>";
 			}
 			guessNamesDiv.prepend(newHTML);
-			resize(body);
 			$(".guessNames").change(function()
 			{
-
 				$(".costs").remove();
 				greedyCount=0;
 				changed=true;
@@ -109,18 +87,18 @@ $("document").ready(function()
 
 	$("#step-2").click(function()
 	{
+		var namesOfGuests=$(".guessNames");
+		var allFilledOut=true;
+		for(var i=0;i<namesOfGuests.length; i++)
+		{
+			if(namesOfGuests[i].value=="")
+			{
+				allFilledOut=false;
+			}
+		}
 		if(changed)
 		{
 			message.html("");
-			var namesOfGuests=$(".guessNames");
-			var allFilledOut=true;
-			for(var i=0;i<namesOfGuests.length; i++)
-			{
-				if(namesOfGuests[i].value=="")
-				{
-					allFilledOut=false;
-				}
-			}
 			if(allFilledOut)
 			{
 				guests=[];
@@ -136,7 +114,7 @@ $("document").ready(function()
 				var script="";
 				for(var i=0;i<guests.length; i++)
 				{
-					script+="<div class='costs mb-3'><div class='name col-3'>"+guests[i].name+"</div><div class='cost col-3'>$"+guests[i].cost+" (0%)</div><div class='form-check form-check-inline greedy col-3'><label for='greedy"+i+"'>greedy</label><input type='checkbox' class='form-check-input greedy-check-box ml-2' value='greedy' id='greedy"+i+"'></div></div>";
+					script+="<div class='costs mb-3'><div class='name col-sm-3'>"+guests[i].name+"</div><div class='cost col-sm-3'>$"+guests[i].cost+" (0%)</div><div class='form-check form-check-inline greedy col-sm-3'><label for='greedy"+i+"'>greedy</label><input type='checkbox' class='form-check-input greedy-check-box ml-2' value='greedy' id='greedy"+i+"'></div></div>";
 				}
 				$("#display").append(script);
 				$(".greedy-check-box").change(function()
@@ -154,7 +132,6 @@ $("document").ready(function()
 					}
 					splitCost();
 				});
-				//resize(body);
 				changed=false;
 			}
 			else
@@ -164,11 +141,17 @@ $("document").ready(function()
 		}
 		else
 		{
-			$("#guessNamesDiv").fadeOut(fadeTime,function()
+			if(allFilledOut)
 			{
-				$("#display").fadeIn(fadeTime);
-				//resize(body);
-			});
+				$("#guessNamesDiv").fadeOut(fadeTime,function()
+				{
+					$("#display").fadeIn(fadeTime);
+				});
+			}
+			else
+			{
+				invalidInput(message,messageFadeTime);
+			}
 		}
 	});
 
@@ -242,6 +225,11 @@ $("document").ready(function()
 		}
 	}
 
+	$("#cost-split").click(function()
+	{
+		splitCost();
+	});
+
 });
 
 function Guest(name, cost, greedy)
@@ -249,15 +237,6 @@ function Guest(name, cost, greedy)
 	this.name=name;
 	this.cost=cost;
 	this.greedy=greedy;
-}
-
-function resize(element)
-{
-	var sum=$("#row-2").outerHeight(true)+$("#row-1").outerHeight(true)+$("#guessNamesDiv").outerHeight(true);
-	var containerHeight=$(".container").outerHeight(true);
-	var windowHeight=$(window).height();
-	var height=Math.max(containerHeight,windowHeight,sum);
-	element.outerHeight(height);
 }
 
 function median(sum,num)

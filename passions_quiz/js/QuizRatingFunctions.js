@@ -13,7 +13,7 @@ $(document).ready(function()
 	var testerKnows=false;
 	var testStarted=false;
 	//5 minutes
-	var timerMinutes=5;
+	var timerMinutes=2;
 	const timeLimit=60000*timerMinutes;
 	var timeLeft=timeLimit;
 
@@ -111,7 +111,7 @@ $(document).ready(function()
 		display();
 		animate();
 	}
-	
+
 	function animate()
 	{
 		stepOne=setTimeout(function(){$("#text").text(waitMessage+" .")},1000);

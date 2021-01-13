@@ -12,7 +12,7 @@ input
 .container-fluid
 {
 	overflow-x: hidden;
-	background:linear-gradient(#ddd,#624b80);
+	background:linear-gradient(#999,#624b80);
 }
 
 #top
@@ -44,12 +44,13 @@ body
 	height:50px;
 	width:100%;
 	background-repeat:repeat-x;
+	white-space: nowrap;
 }
 
 
 #title
 {
-	background-image:url('../images/Passions.jpg');
+	background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7Ajw17rg2XXTK60C5l3aqFe8SXtoDdn5YWA&usqp=CAU');
 	background-position: top center;
 	background-repeat: repeat-x;
 	background-size: contain;
@@ -92,7 +93,8 @@ a
 
 .characters li a:hover
 {
-	background:radial-gradient(#aaa 1%, #572270);
+	background:radial-gradient(#999, #572270 1%);
+	text-decoration: none;
 }
 
 a:hover

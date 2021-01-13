@@ -16,7 +16,7 @@ p
 	box-sizing: border-box;
 }
 
-.cost,.name,.greedy, label, button
+.cost,.name,.greedy, label, button, input['submit']
 {
 	font-weight:900;
 	box-sizing: border-box;
