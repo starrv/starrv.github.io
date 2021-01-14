@@ -106,7 +106,14 @@ function start()
 		}
 		if(allFilled)
 		{
-			return "tied";
+			if(verifyCompletions(boxes,0,2,1) || verifyCompletions(boxes,3,5,1) || verifyCompletions(boxes,6,8,1) || verifyCompletions(boxes,0,6,3) || verifyCompletions(boxes,1,7,3) || verifyCompletions(boxes,2,8,3) || verifyCompletions(boxes,0,8,4) || verifyCompletions(boxes,2,6,2))
+			{
+				return currentPlayer.name;
+			}
+			else
+			{
+				return "tied";
+			}
 		}
 		else
 		{
