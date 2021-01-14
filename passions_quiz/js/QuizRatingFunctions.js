@@ -78,7 +78,8 @@ $(document).ready(function()
 	  });
 	  $("#no").click(function()
 		{
-	    window.open('../index.html','_parent');
+	    //window.open('../index.html','_parent');
+			window.close();
 	  });
 	  $('#submit').click(function (event){
 	    event.preventDefault();
