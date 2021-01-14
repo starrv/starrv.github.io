@@ -76,8 +76,9 @@ $(document).ready(function()
 		document.getElementById('crowdlaughter').pause();
 		document.getElementById('crowdlaughter').currentTime=0;
 	  });
-	  $("#no").click(function(){
-	    window.open('../passions/index.html','_parent');
+	  $("#no").click(function()
+		{
+	    window.open('../index.html','_parent');
 	  });
 	  $('#submit').click(function (event){
 	    event.preventDefault();
@@ -178,7 +179,7 @@ $(document).ready(function()
 		{
 				timeLeft-=1000;
 				$("#timer").text("Time left: "+convertTime(timeLeft));
-				//document.getElementById('tick-tock').play();
+				document.getElementById('tick-tock').play();
 		},1000);
 		quiz=setTimeout(function()
 		{
