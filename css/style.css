@@ -8,7 +8,12 @@ body
   font-family: 'Montserrat', sans-serif;
 }
 
-#backgroundImg, #resume
+#backgroundImg, #resume, #mayaThesis
 {
 	height:100vh;
+}
+
+.alert
+{
+	color:#ff6611;
 }
