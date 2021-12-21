@@ -1,0 +1,53 @@
+.img-fluid
+{
+	 width: 100% \9;
+}
+
+body
+{
+  font-family: 'Kaisei HarunoUmi', serif;
+}
+
+#backgroundImg, #resume, #mayaThesis
+{
+	height:100vh;
+}
+
+.alert
+{
+	color:#ff6611;
+}
+a
+{
+	color:#731e56;
+}
+
+a:hover
+{
+	color:#ab328d;
+}
+
+li
+{
+	list-style-type: circle;
+}
+
+.nav li
+{
+	list-style:none;
+}
+
+.opened-page-link a
+{
+	color:#ab328d;
+}
+
+.projects-contents li
+{
+	list-style: none;
+}
+
+.projects-contents li:hover
+{
+	background:radial-gradient(#fff,#ebc5e1);
+}

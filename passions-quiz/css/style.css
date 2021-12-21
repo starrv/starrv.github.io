@@ -1,0 +1,79 @@
+body
+{
+	background:#ede5ce;
+	font-family: 'Playfair Display', serif;
+}
+
+.container
+{
+	background:#fff;
+}
+
+h1
+{
+	text-align:center;
+	animation:animation1 1s infinite;
+	-webkit-animation:animation1 1s infinite;
+}
+
+a
+{
+	color:#473219;
+}
+
+a:hover
+{
+	color:#444;
+	text-decoration: none;
+	font-weight: 900;
+	font-style: italic;
+}
+
+#blackOut
+{
+	opacity:0.7;
+	filter:alpha(opacity=70); /* For IE8 and earlier */
+	background-color:black;
+	top:0px;
+	bottom:0px;
+	height:100%;
+	width:200%;
+	left:-100%;
+	position:fixed;
+}
+
+#dialog, #timer
+{
+	position:fixed;
+	left:37.5%;
+	top:0px;
+	width:25%;
+}
+
+#dialog
+{
+	background-color:#fff;
+	display:none;
+}
+
+#timer
+{
+	background:#fff;
+}
+
+hr
+{
+	background-color: #222;
+}
+
+@keyframes animation1
+{
+	to  {color: eeeeee;}
+	from {color: 992255;}
+}
+
+@-webkit-keyframes animation1 /* Safari and Chrome */
+{
+	to  {color: eeeeee;}
+	from{color: 992255;}
+}
