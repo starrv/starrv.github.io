@@ -42,12 +42,7 @@ li
 	color:#ab328d;
 }
 
-.projects-contents li
+.project
 {
-	list-style: none;
-}
-
-.projects-contents li:hover
-{
-	background:radial-gradient(#fff,#ebc5e1);
+	background:radial-gradient(#fff 90% ,#ebc5e1 10%);
 }
