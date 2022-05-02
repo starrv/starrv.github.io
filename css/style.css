@@ -3,9 +3,9 @@
 	 width: 100% \9;
 }
 
-body
+html,body
 {
-  font-family: 'Kaisei HarunoUmi', serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 #backgroundImg, #resume, #mayaThesis
