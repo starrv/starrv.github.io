@@ -8,9 +8,14 @@ html,body
 	font-family: 'Montserrat', sans-serif;
 }
 
-#backgroundImg, #resume, #mayaThesis
+#resume, #mayaThesis
 {
 	height:100vh;
+}
+
+#backgroundImg
+{
+	height: 50vh;
 }
 
 .alert
