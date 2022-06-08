@@ -8,16 +8,26 @@ html,body
 	font-family: 'Montserrat', sans-serif;
 }
 
-#backgroundImg, #resume, #mayaThesis
+#resume, #mayaThesis
 {
 	height:100vh;
+}
+
+#backgroundImg
+{
+	height: 50vh;
+}
+
+.card-header
+{
+	background: linear-gradient(90deg,white,#d3d9f2);
 }
 
 .alert
 {
 	color:red;
 }
-a
+a, .project-title
 {
 	color:#731e56;
 }
