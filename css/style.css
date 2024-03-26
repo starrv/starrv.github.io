@@ -15,7 +15,7 @@ html,body
 
 #backgroundImg
 {
-	height: 50vh;
+	/*height: 50vh;*/
 }
 
 .card-header
@@ -55,4 +55,9 @@ li
 .project
 {
 	background:radial-gradient(#fff 90% ,#ebc5e1 10%);
+}
+
+#lets-chat-video
+{
+	width:25vw;
 }
