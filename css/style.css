@@ -15,7 +15,7 @@ html,body
 
 #backgroundImg
 {
-	height: 100vh;
+	/*height: 100vh;*/
 }
 
 .card-header
@@ -27,6 +27,7 @@ html,body
 {
 	color:red;
 }
+
 a, .project-title
 {
 	color:#731e56;
