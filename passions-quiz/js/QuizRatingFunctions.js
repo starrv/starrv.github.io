@@ -214,7 +214,7 @@ $(document).ready(function()
 			 $("#yes").slideUp();
 			 $("#no").slideUp();
 			 display();
-			 setTimeout(function(){unDisplay();}, 5000);
+			 setTimeout(function(){if(timer)unDisplay();}, 5000);
 		 }
 	}
 
@@ -349,8 +349,8 @@ $(document).ready(function()
 
 	function scoreOnTimeOut()
 	{
-		clearInterval(timer);
-		clearTimeout(quiz);
+		timer=clearInterval(timer);
+		quiz=clearTimeout(quiz);
 		//timer.text("Time left: 0");
 		var answer=new Array();
 		answer[0]="Juanita";
@@ -420,8 +420,8 @@ $(document).ready(function()
 	{
 		if(isSelected("question 1") && isSelected("question 2")&&isSelected("question 3") && isSelected("question 4") && isSelected("question 5") && isSelected("question 6") && isSelected("question 7")&&isSelected("question 8") && isSelected("question 9") && isSelected("question 10") && isSelected("question 11") && isSelected("question 12"))
 		{
-			clearInterval(timer);
-			clearTimeout(quiz);
+			timer=clearInterval(timer);
+			quiz=clearTimeout(quiz);
 			var answer=new Array();
 			answer[0]="Juanita";
 			answer[1]="Gwen";
