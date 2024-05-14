@@ -1,0 +1,64 @@
+html
+{
+	font-family: sans-serif;
+	box-sizing: border-box;
+	padding:0;
+	margin:0;
+}
+
+body
+{
+	padding: 0;
+	margin:0;
+}
+
+h1
+{
+	text-align: center;
+}
+
+#display img
+{
+	display: block;
+}
+
+
+#theForm
+{
+	background:#d2eaf7;
+}
+
+#display
+{
+	height:500px;
+	overflow-y: scroll;
+}
+
+#theForm, #display
+{
+	box-sizing: border-box;
+}
+
+em
+{
+	text-decoration: underline;
+}
+
+.error
+{
+	color:rgb(255,100,100);
+	font-weight: 900;
+}
+
+
+input[type='submit']
+{
+	background: radial-gradient(white,#f4d2f7);
+	font-weight: 900;
+	cursor:pointer;
+}
+
+#title
+{
+	background: linear-gradient(white,#d2eaf7);
+}

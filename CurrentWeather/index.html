@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Current Weather
+		</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- image icon -->
+		<link rel="shortcut icon" type="image/png" href="https://www.metaweather.com/static/img/weather/png/64/c.png">
+
+		<!-- CSS stylesheets -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="style.css">
+
+		<!-- JavaScript scripts -->
+		<script type="text/javascript" src="script.js"></script>
+	</head>
+	<body>
+		<div class="container-fluid m-0 p-0">
+			<div class='row mb-4 p-0 header'>
+				<h1 id="title" class="w-100 col-sm m-0 p-2">Get the Latest Weather</h1>
+			</div>
+
+			<div class="row m-0 content-display">
+				<div id="display" class="row mb-0 w-50 border border-dark rounded-top mx-auto mt-2"></div>
+			</div>
+
+			<div id="theForm" class="row m-0 p-2 w-50 border border-dark rounded-bottom mx-auto content-form">
+				<div class="col-lg-3 m-2 overflow-hidden">
+					<label for="address"><strong>address</strong>:
+					</label>
+				</div>
+				<div class="col-lg-3 m-2">
+					<input type="text" id="address" class="rounded w-100">
+				</div>
+				<div class="col-lg-3 m-2">
+					<input type="submit" value="get weather" id="submit" class="rounded">
+				</div>
+			</div>
+
+		</div>
+		</div>
+	</body>
+</html>
