@@ -1,16 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+html,body
+{
+	font-family: "Lora", serif;
+}
+
 .img-fluid
 {
 	 width: 100% \9;
 }
 
-html,body
-{
-	font-family: 'Montserrat', sans-serif;
-}
-
 #resume, #mayaThesis
 {
-	height:100vh;
+
+	/*height:75vh;*/
 }
 
 #backgroundImg
@@ -28,7 +31,7 @@ html,body
 	color:red;
 }
 
-a, .project-title
+a, .project-title, .nav-link
 {
 	color:#731e56;
 }
@@ -46,6 +49,7 @@ li
 .nav li
 {
 	list-style:none;
+	color:#731e56;
 }
 
 .opened-page-link a
