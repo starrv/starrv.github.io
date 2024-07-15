@@ -51,6 +51,8 @@ a:hover
 	color:#ab328d;
 }
 
+a:c
+
 li
 {
 	list-style-type: circle;
@@ -62,7 +64,7 @@ li
 	color:#731e56;
 }
 
-.opened-page-link a
+.opened-page-link a, .active
 {
 	color:#ab328d;
 }
