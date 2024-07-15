@@ -7,7 +7,9 @@ html,body
 
 .img-fluid
 {
-	 width: 100% \9;
+	width: 100% \9;
+	max-width: 100%;
+	height:auto;
 }
 
 #resume, #mayaThesis
@@ -19,6 +21,14 @@ html,body
 #backgroundImg
 {
 	/*height: 100vh;*/
+}
+
+#banner{
+	background-image: url('../images/background-img.jpeg');
+	height:100vh;
+	background-position: center;
+	background-size: cover;
+
 }
 
 .card-header
