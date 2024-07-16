@@ -23,7 +23,7 @@ html,body
 }
 
 #banner{
-	background-image: url('../images/background-img.jpeg');
+	background-image: url('https://project-images-vs.s3.amazonaws.com/images/background-img.jpeg');
 	height:100vh;
 	background-position: center;
 	background-size: cover;
