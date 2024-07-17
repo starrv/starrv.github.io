@@ -78,7 +78,7 @@ li
 	width:25vw;
 }
 
-video.small-device, video.medium-device{
+video.sm-device, video.md-device{
 	display: none;
 }
 
@@ -91,7 +91,7 @@ video.small-device, video.medium-device{
 	}
 }
 
-@media screen and (max-width:1050px){
+@media screen and (min-width:651px) and (max-width:1010px){
 	video.md-device{
 		display:block;
 	}
