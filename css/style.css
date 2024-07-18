@@ -78,24 +78,24 @@ li
 	width:25vw;
 }
 
-video.sm-device, video.md-device{
+.sm-device, .md-device{
 	display: none;
 }
 
 @media screen and (max-width:650px){
-	video.sm-device{
+	.sm-device{
 		display:block;
 	}
-	video.md-device, video.lg-device{
+	.md-device, .lg-device{
 		display: none;
 	}
 }
 
 @media screen and (min-width:651px) and (max-width:1010px){
-	video.md-device{
+	.md-device{
 		display:block;
 	}
-	video.sm-device, video.lg-device{
+	.sm-device, .lg-device{
 		display: none;
 	}
 }
