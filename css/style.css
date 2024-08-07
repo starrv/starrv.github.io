@@ -78,6 +78,11 @@ li
 	width:25vw;
 }
 
+.embed-responsive, .embed-responsive-pdf{
+	background-color: black;
+	border-radius: 5px;
+}
+
 .sm-device, .md-device{
 	display: none;
 }
