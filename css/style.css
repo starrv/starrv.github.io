@@ -22,14 +22,6 @@ html,body
 	/*height: 100vh;*/
 }
 
-#banner{
-	background-image: url('https://project-images-vs.s3.amazonaws.com/images/background-img.jpeg');
-	height:100vh;
-	background-position: center;
-	background-size: cover;
-
-}
-
 .card-header
 {
 	background: linear-gradient(90deg,white,#d3d9f2);
