@@ -11,17 +11,6 @@ html,body
 	height:auto;
 }
 
-#resume, #mayaThesis
-{
-
-	/*height:75vh;*/
-}
-
-#backgroundImg
-{
-	/*height: 100vh;*/
-}
-
 .card-header
 {
 	background: linear-gradient(90deg,white,#d3d9f2);
