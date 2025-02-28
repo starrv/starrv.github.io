@@ -12,10 +12,10 @@ html,body
 }
 
 .cover-photo{
-	background-image: url('https://public-docs-vs.s3.us-east-1.amazonaws.com/images/background.jpeg');
+	background-image: url('https://project-images-vs.s3.us-east-1.amazonaws.com/images/background-1.png');
 	background-repeat:no-repeat;
 	background-size:cover;
-	background-position: center;
+	background-position-y: top;
 	width:100vw;
 	height:100vh;
 }
