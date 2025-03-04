@@ -11,8 +11,9 @@ html,body
 	height:auto;
 }
 
+
 .cover-photo{
-	background-image: url('https://project-images-vs.s3.us-east-1.amazonaws.com/images/background-1.png');
+	background-image: url('');
 	background-repeat:no-repeat;
 	background-size:cover;
 	background-position-y: top;
@@ -71,27 +72,5 @@ li
 .embed-responsive, .embed-responsive-pdf{
 	background-color: black;
 	border-radius: 5px;
-}
-
-.sm-device, .md-device{
-	display: none;
-}
-
-@media screen and (max-width:650px){
-	.sm-device{
-		display:block;
-	}
-	.md-device, .lg-device{
-		display: none;
-	}
-}
-
-@media screen and (min-width:651px) and (max-width:1010px){
-	.md-device{
-		display:block;
-	}
-	.sm-device, .lg-device{
-		display: none;
-	}
 }
   
