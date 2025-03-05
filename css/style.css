@@ -41,7 +41,10 @@ a:hover
 	color:#ab328d;
 }
 
-a:c
+a{
+	text-decoration: underline;
+	font-weight: 600;
+}
 
 li
 {
@@ -52,6 +55,10 @@ li
 {
 	list-style:none;
 	color:#731e56;
+}
+
+li > a, .card-text > a, .navbar a{
+	text-decoration: none;
 }
 
 .opened-page-link a, .active
