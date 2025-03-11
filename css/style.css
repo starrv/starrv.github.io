@@ -13,9 +13,9 @@ html,body
 
 
 .cover-photo{
-	background-image: url('');
+	background-image: url('https://project-images-vs.s3.us-east-1.amazonaws.com/images/background-1.png');
 	background-repeat:no-repeat;
-	background-size:cover;
+	background-size:contain;
 	background-position-y: top;
 	width:100vw;
 	height:100vh;
