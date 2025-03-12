@@ -11,6 +11,11 @@ html,body
 	height:auto;
 }
 
+.intro{
+	width:100vw;
+	height:100vh;
+}
+
 .card-header
 {
 	background: linear-gradient(90deg,white,#d3d9f2);
