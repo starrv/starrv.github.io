@@ -14,11 +14,23 @@ html,body
 .intro{
 	width:100vw;
 	height:100vh;
+	background-size:cover;
+	background: radial-gradient(white,#d3d9f2);
 }
 
 .card-header
 {
 	background: linear-gradient(90deg,white,#d3d9f2);
+}
+
+p.intro-text{
+	font-weight: 600;
+	font-size: 2rem;
+}
+
+.project-title > span{
+	color: black;
+	font-weight: 600;
 }
 
 .alert
