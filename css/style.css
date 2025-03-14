@@ -15,12 +15,12 @@ html,body
 	width:100vw;
 	height:100vh;
 	background-size:cover;
-	background: radial-gradient(white,#d3d9f2);
+	background: radial-gradient(white,#731e56);
 }
 
 .card-header
 {
-	background: linear-gradient(90deg,white,#d3d9f2);
+	background: linear-gradient(90deg,white, #ad809e);
 }
 
 p.intro-text{
