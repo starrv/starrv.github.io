@@ -14,8 +14,11 @@ html,body
 .intro{
 	width:100vw;
 	height:100vh;
+	color:white;
 	background-size:cover;
-	background: radial-gradient(white,#ad809e);
+	background-position: center center;
+	background-image: url('../images/background-1.jpg');
+	/* background: radial-gradient(white,#ad809e); */
 }
 
 .card-header
