@@ -31,6 +31,10 @@ p.intro-text{
 	font-size: 2rem;
 }
 
+p.intro-title{
+	font-weight: 600;
+}
+
 .project-title > span{
 	color: black;
 	font-weight: 600;
