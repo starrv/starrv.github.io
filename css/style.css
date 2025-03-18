@@ -11,6 +11,10 @@ html,body
 	height:auto;
 }
 
+.reference span{
+	font-weight: 600;
+}
+
 .intro{
 	width:100vw;
 	height:100vh;
