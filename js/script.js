@@ -1,7 +1,21 @@
-/*$(document).ready(function(){
-	$(".project").click(function()
-	{
-		var link=$(this).find("a").attr("href");
-		window.open(link,"_blank");
-	});
-});*/
+function init(){
+	addEventListener("load",scaleIntro);
+	addEventListener("resize",scaleIntro);
+}
+
+function scaleIntro(){
+	const intro=document.querySelector(".intro");
+	const introChildren=intro.querySelectorAll("*");
+	let currentHeight=0;
+	for(const child of introChildren){
+		const childHeight=parseInt(getComputedStyle(child).getPropertyValue("height"));
+		currentHeight+=childHeight+200;
+	}
+	const currentWidth=parseInt(getComputedStyle(document.body).getPropertyValue("width"));;
+	const bodyHeight=parseInt(getComputedStyle(document.body).getPropertyValue("height"));
+	currentHeight=Math.max(bodyHeight,currentHeight);
+	intro.style.width=currentWidth+"px";
+	intro.style.height=currentHeight+"px";
+}
+
+init();
