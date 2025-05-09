@@ -27,9 +27,8 @@ body
 	height:100%;
 	color:white;
 	background-size:cover;
-	background-position: bottom;
+	background-position: center;
 	background-image: url('../images/background-1.jpg');
-	animation: scroll-image-down 5s; 
 }
 
 .card-header
@@ -106,12 +105,4 @@ li > a, .card-text > a, .navbar a{
 	border-radius: 5px;
 }
 
-@keyframes scroll-image-down{
-	0%{
-		background-position: top;
-	}
-	100%{
-		background-position: bottom;
-	}
-}
 
