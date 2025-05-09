@@ -29,7 +29,7 @@ body
 	background-size:cover;
 	background-position: bottom;
 	background-image: url('../images/background-1.jpg');
-	animation: toggle 5s; 
+	animation: scroll-image-down 5s; 
 }
 
 .card-header
@@ -106,7 +106,7 @@ li > a, .card-text > a, .navbar a{
 	border-radius: 5px;
 }
 
-@keyframes toggle{
+@keyframes scroll-image-down{
 	0%{
 		background-position: top;
 	}
