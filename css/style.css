@@ -27,22 +27,22 @@ body
 	height:100%;
 	color:white;
 	background-size:cover;
+	background-repeat: no-repeat;
 	background-position: center;
-	background-image: url('../images/background-1.jpg');
+	background-image: url('../images/background-1.jpg');]
+}
+
+.intro-title, .intro-text{
+	font-weight: 600;
+}
+
+.intro-text{
+	font-size: 2rem;
 }
 
 .card-header
 {
 	background: linear-gradient(90deg,white, #ad809e);
-}
-
-p.intro-text{
-	font-weight: 600;
-	font-size: 2rem;
-}
-
-p.intro-title{
-	font-weight: 600;
 }
 
 .project-title > span{
@@ -104,5 +104,3 @@ li > a, .card-text > a, .navbar a{
 	background-color: black;
 	border-radius: 5px;
 }
-
-
