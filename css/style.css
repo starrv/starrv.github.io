@@ -30,7 +30,6 @@ body
 	background-repeat: no-repeat;
 	background-position: center;
 	background-image: url('../images/background-1.jpg');
-	background-attachment: fixed;
 }
 
 .intro *{
