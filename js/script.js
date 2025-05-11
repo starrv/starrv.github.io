@@ -7,7 +7,9 @@ function scaleIntro(){
 	const intro=document.querySelector(".intro");
 	const introChildren=intro.querySelectorAll("*");
 	for(const introChild of introChildren){
-		introChild.style.display="block";
+		if(getComputedStyle(introChild).getPropertyValue("display")==="none"){
+			introChild.style.display="block";
+		}
 	}
 	let currentHeight=0;
 	for(const child of introChildren){
