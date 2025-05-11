@@ -29,7 +29,12 @@ body
 	background-size:cover;
 	background-repeat: no-repeat;
 	background-position: center;
-	background-image: url('../images/background-1.jpg');]
+	background-image: url('../images/background-1.jpg');
+	background-attachment: fixed;
+}
+
+.intro *{
+	display: none;
 }
 
 .intro-title, .intro-text{

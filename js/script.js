@@ -6,6 +6,9 @@ function init(){
 function scaleIntro(){
 	const intro=document.querySelector(".intro");
 	const introChildren=intro.querySelectorAll("*");
+	for(const introChild of introChildren){
+		introChild.style.display="block";
+	}
 	let currentHeight=0;
 	for(const child of introChildren){
 		const childHeight=parseInt(getComputedStyle(child).getPropertyValue("height"));
