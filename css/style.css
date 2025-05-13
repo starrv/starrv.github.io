@@ -59,9 +59,10 @@ body
 	color:red;
 }
 
-a, .project-title, .nav-link
+a, a:link, a:visited, a:active, .project-title, .nav-link
 {
 	color:#731e56;
+	font-weight: 600;
 }
 
 a:hover
@@ -71,7 +72,6 @@ a:hover
 
 a{
 	text-decoration: underline;
-	font-weight: 600;
 }
 
 li
@@ -91,7 +91,7 @@ li > a, .card-text > a, .navbar a{
 
 .opened-page-link a, .active
 {
-	color:#ab328d;
+	color:#731e56;
 }
 
 .project
@@ -104,7 +104,7 @@ li > a, .card-text > a, .navbar a{
 	width:25vw;
 }
 
-.embed-responsive, .embed-responsive-pdf{
+.embed-responsive, .embed-responsive-pdf, video{
 	background-color: black;
 	border-radius: 5px;
 }

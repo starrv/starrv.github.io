@@ -29,32 +29,35 @@
     <link rel="icon" href="https://project-images-vs.s3.amazonaws.com/images/developer-icon.png" type="image/png" sizes="40x40">
     <link rel="apple-touch-icon" href="https://project-images-vs.s3.amazonaws.com/images/developer-icon.png" />
     <!-- CSS stylesheets -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <!-- JavaScript scripts -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.6/dist/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+    
     <script defer type="text/javascript" src="./js/script.js"></script> 
   </head>
   <body>
     <div class="container-fluid p-0">
-      
+
       <nav class="navbar navbar-expand-lg">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand m-2" href="#">
           Valencia S.
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <img src="https://project-images-vs.s3.amazonaws.com/images/developer-icon.png" width="50" height="50" class="img-fluid img-thumbnail m-2 border rounded-circle">    
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <img src="https://project-images-vs.s3.amazonaws.com/images/developer-icon.png" width="50" height="50" class="img-fluid img-thumbnail m-2 border rounded-circle navbar-toggler-icon">    
         </button>
       
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="nav navbar-nav mr-auto d-flex flex-lg-row-reverse col-sm m-0">
             
             <li class="nav-item dropdown m-2">
-              <a class="nav-link h3 dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Projects</a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#split-cost">Split Cost</a>
+              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                Projects
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#split-cost">Split Cost</a>
+                </li>
                 <a class="dropdown-item" href="#passions-quiz">PassionsQuiz</a>
                 <a class="dropdown-item" href="#animals-and-nature">Animals and Nature</a>
                 <a class="dropdown-item" href="#lets-chat">Let's Chat</a>
@@ -65,21 +68,21 @@
                 <a class="dropdown-item" href="#create-profile">Create Profile</a>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="#projects">Projects</a>
-              </div>
+              </ul>
             </li>
             
             <li class="nav-item m-2">
-              <a class="nav-link h3" href="#contact-me">
+              <a class="nav-link" href="#contact-me">
                 Contact
               </a>
             </li>
             <li class="nav-item m-2">
-              <a class="nav-link h3" href="#about-me">
+              <a class="nav-link" href="#about-me">
                 About Me
               </a>
             </li>
             <li class="nav-item m-2">
-              <a class="nav-link h3" href="#">
+              <a class="nav-link" href="#">
                 Home
               </a>
             </li>
@@ -126,7 +129,7 @@
       </div>
     
       <div id="contact-me" class="row m-4">
-        <div class="col-sm">
+        <div class="col-sm m-4">
           <div class="card" style="width: 18rem;">
             <h2 class="display-4 card-header border">
               Contact
@@ -168,15 +171,11 @@
       </div>  
 
       <div class="row m-4">
-        <div class="col-lg-9">  
-            <div class="embed-responsive embed-responsive-16by9 m-4">
-              <video class="mx-auto embed-responsive-item rounded" poster="https://project-images-vs.s3.amazonaws.com/split-cost/screenshot-1.png" preload="metadata" controls>
-                <source src="https://project-videos-vs.s3.amazonaws.com/split-cost/split-cost-demo.mp4" type="video/mp4">
-                <p>Your browser doesn't support video.  Here is
-                    a <a href="https://project-videos-vs.s3.amazonaws.com/split-cost/split-cost-demo.mp4" target="_blank">link to the video</a> instead.</p>
-              </video>
-            </div>
-        </div>
+        <video class="col-lg-9 object-fit-contain rounded m-4 p-2" poster="https://project-images-vs.s3.amazonaws.com/split-cost/screenshot-1.png" preload="metadata" controls>
+          <source src="https://project-videos-vs.s3.amazonaws.com/split-cost/split-cost-demo.mp4" type="video/mp4">
+          <p>Your browser doesn't support video.  Here is
+              a <a href="https://project-videos-vs.s3.amazonaws.com/split-cost/split-cost-demo.mp4" target="_blank">link to the video</a> instead.</p>
+        </video>      
       </div>
 
       <div class="row m-4">
@@ -194,8 +193,8 @@
          <hr class="col-lg-9 m-lg-4">
       </div>
      
-      <div class="row ml-4 mb-2 mt-5" id="passions-quiz">
-        <div class="col-lg-9">  
+      <div class="row m-4" id="passions-quiz">
+        <div class="col-sm">  
           <h3 class="m-4 project-title">
             Passions Quiz <span>(Live)</span>
           </h3>
@@ -203,15 +202,11 @@
       </div>
           
       <div class="row m-4">
-        <div class="col-lg-9">  
-          <div class="embed-responsive embed-responsive-16by9 m-4">
-            <video class="mx-auto embed-responsive-item rounded" poster="https://project-images-vs.s3.amazonaws.com/passions-quiz/screenshot-1.png" preload="metadata" controls>
-              <source src="https://project-videos-vs.s3.amazonaws.com/passions-quiz/passions-quiz-demo.mp4" type="video/mp4">
-              <p>Your browser doesn't support video.  Here is
-                  a <a href="https://project-videos-vs.s3.amazonaws.com/passions-quiz/passions-quiz-demo.mp4" target="_blank">link to the video</a> instead.</p>
-            </video>
-          </div>
-        </div>
+        <video class="col-lg-9 object-fit-contain rounded m-4 p-2" poster="https://project-images-vs.s3.amazonaws.com/passions-quiz/screenshot-1.png" preload="metadata" controls>
+          <source src="https://project-videos-vs.s3.amazonaws.com/passions-quiz/passions-quiz-demo.mp4" type="video/mp4">
+          <p>Your browser doesn't support video.  Here is
+              a <a href="https://project-videos-vs.s3.amazonaws.com/passions-quiz/passions-quiz-demo.mp4" target="_blank">link to the video</a> instead.</p>
+        </video>
       </div>
           
       <div class="row m-4">
@@ -238,15 +233,11 @@
       </div>
 
       <div class="row m-4">
-        <div class="col-lg-9">  
-          <div class="embed-responsive embed-responsive-16by9 m-4">
-            <video class="mx-auto embed-responsive-item rounded" poster="https://project-images-vs.s3.amazonaws.com/animals-and-nature/animals-and-nature-screenshot-1.png" preload="metadata" controls>
-              <source src="https://project-videos-vs.s3.amazonaws.com/animals-and-nature/animals-and-nature-demo.mp4" type="video/mp4">
-              <p>Your browser doesn't support video.  Here is
-                  a <a href="https://project-videos-vs.s3.amazonaws.com/animals-and-nature/animals-and-nature-demo.mp4" target="_blank">link to the video</a> instead.</p>
-            </video>
-            </div>
-        </div>
+        <video class="col-lg-9 object-fit-contain rounded m-4 p-2" poster="https://project-images-vs.s3.amazonaws.com/animals-and-nature/animals-and-nature-screenshot-1.png" preload="metadata" controls>
+          <source src="https://project-videos-vs.s3.amazonaws.com/animals-and-nature/animals-and-nature-demo.mp4" type="video/mp4">
+          <p>Your browser doesn't support video.  Here is
+              a <a href="https://project-videos-vs.s3.amazonaws.com/animals-and-nature/animals-and-nature-demo.mp4" target="_blank">link to the video</a> instead.</p>
+        </video>
       </div>
 
       <div class="row m-4">
@@ -287,15 +278,11 @@
       </div>
 
       <div class="row m-4">
-        <div class="col-lg-9">  
-          <div class="embed-responsive embed-responsive-16by9 m-4">
-            <video class="mx-auto embed-responsive-item rounded" poster="https://project-images-vs.s3.amazonaws.com/lets-chat/lets-chat-thumbnail.jpg" preload="metadata" controls>
-              <source src="https://project-videos-vs.s3.amazonaws.com/lets-chat/lets-chat-trailer.mp4" type="video/mp4">
-              <p>Your browser doesn't support video.  Here is
-                  a <a href="https://project-videos-vs.s3.amazonaws.com/lets-chat/lets-chat-trailer.mp4" target="_blank">link to the video</a> instead.</p>
-            </video>
-          </div>
-        </div>
+        <video class="col-lg-9 object-fit-contain rounded m-4 p-2" poster="https://project-images-vs.s3.amazonaws.com/lets-chat/lets-chat-thumbnail.jpg" preload="metadata" controls>
+          <source src="https://project-videos-vs.s3.amazonaws.com/lets-chat/lets-chat-trailer.mp4" type="video/mp4">
+          <p>Your browser doesn't support video.  Here is
+              a <a href="https://project-videos-vs.s3.amazonaws.com/lets-chat/lets-chat-trailer.mp4" target="_blank">link to the video</a> instead.</p>
+        </video>
       </div>
           
       <div class="row m-4">
@@ -320,15 +307,11 @@
       </div>
 
       <div class="row m-4">
-        <div class="col-lg-9">  
-          <div class="embed-responsive embed-responsive-16by9 m-4">
-            <video class="mx-auto embed-responsive-item rounded" poster="https://project-images-vs.s3.amazonaws.com/find-princess-angela/screenshot-1.png" preload="metadata" controls>
-              <source src="https://project-videos-vs.s3.amazonaws.com/find-princess-angela/find-princess-angela-trailer.mp4" type="video/mp4">
-              <p>Your browser doesn't support video.  Here is
-                  a <a href="https://project-videos-vs.s3.amazonaws.com/find-princess-angela/find-princess-angela-trailer.mp4" target="_blank">link to the video</a> instead.</p>
-            </video>
-          </div>
-        </div>
+        <video class="col-lg-9 object-fit-contain rounded m-4 p-2" poster="https://project-images-vs.s3.amazonaws.com/find-princess-angela/screenshot-1.png" preload="metadata" controls>
+          <source src="https://project-videos-vs.s3.amazonaws.com/find-princess-angela/find-princess-angela-trailer.mp4" type="video/mp4">
+          <p>Your browser doesn't support video.  Here is
+              a <a href="https://project-videos-vs.s3.amazonaws.com/find-princess-angela/find-princess-angela-trailer.mp4" target="_blank">link to the video</a> instead.</p>
+        </video>
       </div>
       
       <div class="row m-4">
@@ -356,15 +339,11 @@
       </div>
 
       <div class="row m-4">
-        <div class="col-lg-9">  
-          <div class="embed-responsive embed-responsive-16by9 m-4">
-            <video class="mx-auto embed-responsive-item rounded" poster="https://project-images-vs.s3.amazonaws.com/lets-paint/screenshot-3.png" preload="metadata" controls>
-              <source src="https://project-videos-vs.s3.amazonaws.com/lets-paint/lets-paint-trailer.mp4" type="video/mp4">
-              <p>Your browser doesn't support video.  Here is
-                  a <a href="https://project-videos-vs.s3.amazonaws.com/lets-paint/lets-paint-trailer.mp4" target="_blank">link to the video</a> instead.</p>
-            </video>
-          </div>  
-        </div>
+        <video class="col-lg-9 object-fit-contain rounded m-4 p-2" poster="https://project-images-vs.s3.amazonaws.com/lets-paint/screenshot-3.png" preload="metadata" controls>
+          <source src="https://project-videos-vs.s3.amazonaws.com/lets-paint/lets-paint-trailer.mp4" type="video/mp4">
+          <p>Your browser doesn't support video.  Here is
+              a <a href="https://project-videos-vs.s3.amazonaws.com/lets-paint/lets-paint-trailer.mp4" target="_blank">link to the video</a> instead.</p>
+        </video>  
       </div>
        
        <div class="row m-4">
@@ -420,15 +399,11 @@
       </div>
         
       <div class="row m-4">
-        <div class="col-lg-9">  
-          <div class="embed-responsive embed-responsive-16by9 m-4">
-            <video class="mx-auto embed-responsive-item rounded" poster="https://project-images-vs.s3.amazonaws.com/maya-decimal-conversion-tool/phone-screenshot-1.jpg" preload="metadata" controls>
-              <source src="https://project-videos-vs.s3.amazonaws.com/maya-decimal-conversion-tool/maya-decimal-conversion-tool-demo.mp4" type="video/mp4">
-              <p>Your browser doesn't support video.  Here is
-                  a <a href="https://project-videos-vs.s3.amazonaws.com/maya-decimal-conversion-tool/maya-decimal-conversion-tool-demo.mp4" target="_blank">link to the video</a> instead.</p>
-            </video>
-          </div>
-        </div>
+        <video class="col-lg-9 object-fit-contain rounded m-4 p-2" poster="https://project-images-vs.s3.amazonaws.com/maya-decimal-conversion-tool/phone-screenshot-1.jpg" preload="metadata" controls>
+          <source src="https://project-videos-vs.s3.amazonaws.com/maya-decimal-conversion-tool/maya-decimal-conversion-tool-demo.mp4" type="video/mp4">
+          <p>Your browser doesn't support video.  Here is
+              a <a href="https://project-videos-vs.s3.amazonaws.com/maya-decimal-conversion-tool/maya-decimal-conversion-tool-demo.mp4" target="_blank">link to the video</a> instead.</p>
+        </video>
       </div> 
           
       <div class="row m-4">
@@ -455,15 +430,11 @@
       </div>
 
       <div class="row m-4">
-        <div class="col-lg-9">  
-          <div class="embed-responsive embed-responsive-16by9 m-4">
-            <video class="mx-auto embed-responsive-item rounded" poster="https://project-images-vs.s3.amazonaws.com/create-profile/create-profile-screenshot-1.png" preload="metadata" controls>
-              <source src="https://project-videos-vs.s3.amazonaws.com/create-profile/create-profile-demo.mp4" type="video/mp4">
-              <p>Your browser doesn't support video.  Here is
-                  a <a href="https://project-videos-vs.s3.amazonaws.com/create-profile/create-profile-demo.mp4">link to the video</a> instead.</p>
-            </video>
-          </div>
-        </div>
+        <video class="col-lg-9 object-fit-contain rounded m-4 p-2" poster="https://project-images-vs.s3.amazonaws.com/create-profile/create-profile-screenshot-1.png" preload="metadata" controls>
+          <source src="https://project-videos-vs.s3.amazonaws.com/create-profile/create-profile-demo.mp4" type="video/mp4">
+          <p>Your browser doesn't support video.  Here is
+              a <a href="https://project-videos-vs.s3.amazonaws.com/create-profile/create-profile-demo.mp4">link to the video</a> instead.</p>
+        </video>
       </div>
 
       <div class="row m-4">
