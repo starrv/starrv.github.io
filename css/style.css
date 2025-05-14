@@ -115,3 +115,28 @@ li > a, .card-text > a, .navbar a{
 .embed-responsive, .embed-responsive-pdf, video{
 	background-color: black;
 }
+
+@media (prefers-color-scheme: dark) {
+  .dark-theme {
+    color:white;
+	background-color: black;
+  }
+  a, .project-title, .nav-link, .navbar-brand, a.dropdown-item, a.dropdown-toggle{
+	color:#bd8ab6;
+  }
+  .nav-link:focus, .nav-link:hover, .navbar-brand:focus, .navbar-brand:hover, a.dropdown-item:focus, a.dropdown-item:hover,a.dropdown-toggle:focus, a.dropdown-toggle:hover, .navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
+	color:#f0b9e8;
+  }
+  a.dropdown-item:focus, a.dropdown-item:hover{
+	background-color:#222;
+  }
+  .card-header
+  {
+		background: linear-gradient(90deg, black, #7a3b78);
+		color:white;
+  }
+  a:hover
+  {
+	color:#f0b9e8;
+  }
+}
