@@ -14,7 +14,7 @@ function scaleIntro(){
 	let currentHeight=0;
 	for(const child of introChildren){
 		const childHeight=parseInt(getComputedStyle(child).getPropertyValue("height"));
-		currentHeight+=childHeight+200;
+		currentHeight+=childHeight;
 	}
 	const currentWidth=parseInt(getComputedStyle(document.body).getPropertyValue("width"));;
 	const bodyHeight=parseInt(getComputedStyle(document.body).getPropertyValue("height"));
