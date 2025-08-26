@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+html,body, .container-fluid{
+	width:100%;
+	height:100%;
+	margin:0;
+	padding:0;
+}
+
+body
+{
+	font-family: "Montserrat", sans-serif;
+}
+
+.img-fluid
+{
+	max-width: 100%;
+	height:auto;
+}
+
+.reference span{
+	font-weight: 600;
+}
+
+.intro{
+	width:100%;
+	height:100%;
+	color:white;
+	background-size:cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url('../images/background-1.jpg');
+}
+
+.intro *{
+	display: none;
+}
+
+.intro-title, .intro-text{
+	font-weight: 600;
+}
+
+.intro-text{
+	font-size: 2rem;
+}
+
+.card-header
+{
+	background: linear-gradient(90deg,white, #ad809e);
+}
+
+.project-title > span{
+	color: black;
+	font-weight: 600;
+}
+
+.alert
+{
+	color:red;
+}
+
+a, .project-title, .nav-link, .navbar-brand, a.dropdown-item, a.dropdown-toggle
+{
+	color:#731e56;
+	font-weight: 600;
+}
+
+a:hover
+{
+	color:#ab328d;
+}
+
+a{
+	text-decoration: underline;
+}
+
+li
+{
+	list-style-type: circle;
+}
+
+.nav li
+{
+	list-style:none;
+	color:#731e56;
+}
+
+.nav-link:focus, .nav-link:hover, .navbar-brand:focus, .navbar-brand:hover, a.dropdown-item:focus, a.dropdown-item:hover,a.dropdown-toggle:focus, a.dropdown-toggle:hover, .navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
+	color:#ab328d;
+}
+
+li > a, .card-text > a, .navbar a{
+	text-decoration: none;
+}
+
+.opened-page-link a, .active
+{
+	color:#ab328d;
+}
+
+.project
+{
+	background:radial-gradient(#fff 90% ,#ebc5e1 10%);
+}
+
+#lets-chat-video
+{
+	width:25vw;
+}
+
+.card{
+	width:16rem;
+}
+
+.embed-responsive, .embed-responsive-pdf, video{
+	background-color: black;
+}
+
+@media (prefers-color-scheme: dark) {
+  .dark-theme {
+    color:white;
+	background-color: black;
+  }
+  a, .project-title, .nav-link, .navbar-brand, a.dropdown-item, a.dropdown-toggle{
+	color:#bd8ab6;
+  }
+  .nav-link:focus, .nav-link:hover, .navbar-brand:focus, .navbar-brand:hover, a.dropdown-item:focus, a.dropdown-item:hover,a.dropdown-toggle:focus, a.dropdown-toggle:hover, .navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
+	color:#f0b9e8;
+  }
+  a.dropdown-item:focus, a.dropdown-item:hover{
+	background-color:#222;
+  }
+  .card-header
+  {
+		background: linear-gradient(90deg, black, #7a3b78);
+		color:white;
+  }
+  a:hover
+  {
+	color:#f0b9e8;
+  }
+}

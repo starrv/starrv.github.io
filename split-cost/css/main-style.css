@@ -1,0 +1,72 @@
+body
+{
+	box-sizing: border-box;
+	text-align: center;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+}
+
+#message
+{
+	color:#ff0011;
+}
+
+p
+{
+	box-sizing: border-box;
+}
+
+.cost,.name,.greedy, label, button, input['submit']
+{
+	font-weight:900;
+	box-sizing: border-box;
+}
+
+.cost, .name, .greedy, .greedy label
+{
+	text-align: center;
+	display: inline-table;
+}
+
+.display-1, .display-2, .display-3
+{
+	box-sizing: border-box;
+}
+
+h1#title
+{
+	text-align: center;
+	box-sizing: border-box;
+}
+
+#message
+{
+	text-align: center;
+	font-weight: 900;
+}
+
+input, button
+{
+	border-radius: 10px;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+#greetingsDiv, #guessNamesDiv, #display
+{
+	display:none;
+	border-radius: 10px;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+nav
+{
+	border-radius: 10px;
+	box-sizing: border-box;
+}
+
+button
+{
+	background:#332307;
+}
