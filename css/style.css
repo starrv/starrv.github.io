@@ -89,17 +89,21 @@ a:hover, .nav-link:hover, .nav-link:focus, .nav-link:active, .navbar-nav .nav-li
 	height:inherit;
 }
 
-#about-me .paragraph-container, #contact-me .contact-outer-container, #my-skills .skills-container{
+#about-me .paragraph-container, #contact-me .contact-outer-container, #my-skills .skills-container, #my-projects .project-container{
 	background-color:var(--bg-secondary-color);
 	box-shadow:5px 5px 5px var(--bg-primary-color);
 }
 
-#about-me .paragraph-container *, #contact-me .contact-outer-container *, #my-skills .skills-container *{
+#about-me .paragraph-container *, #contact-me .contact-outer-container *, #my-skills .skills-container *, #my-projects .project-container *{
 	background-color: white;
 }
 
 #contact-me .contact-inner-container ul, #my-skills .skills-container ul{
 	list-style: none;
+}
+
+#my-skills{
+	display: none;
 }
 
 @media (prefers-color-scheme: dark) {
