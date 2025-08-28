@@ -1,4 +1,4 @@
- @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/*  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root{
 	--bg-primary-color: #AB328D;
@@ -50,7 +50,7 @@ nav .dropdown-menu{
 }
 
 
-.nav-link, .nav-link{
+.nav-link{
 	color:var(--text-secondary-color);
 }
 
@@ -62,7 +62,7 @@ a:hover, .nav-link:hover, .nav-link:focus, .nav-link:active, .navbar-nav .nav-li
 	color:#000;
 	background-color: #fff;
 }
-
+*/
 
 @media (prefers-color-scheme: dark) {
   .dark-theme {
@@ -73,8 +73,11 @@ a:hover, .nav-link:hover, .nav-link:focus, .nav-link:active, .navbar-nav .nav-li
 	color:white;
 	background-color: #000;
   }
-  a, .dropdown-item{
+  a, .dropdown-item, .nav-link{
 	color:white;
+  }
+  .nav-link:hover, .nav-link:focus, .nav-link:active, .navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
+	color:#eee;
   }
   .dropdown-item:active{
 	color:#fff;
