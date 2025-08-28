@@ -1,26 +1,71 @@
 function init(){
-	addEventListener("load",scaleIntro);
-	addEventListener("resize",scaleIntro);
-}
+	let sectionShowing;
+	const homeSectionId="home";
+	const projectSectionId="my-projects";
 
-function scaleIntro(){
-	const intro=document.querySelector(".intro");
-	const introChildren=intro.querySelectorAll("*");
-	for(const introChild of introChildren){
-		if(getComputedStyle(introChild).getPropertyValue("display")==="none"){
-			introChild.style.display="block";
+	function initDropdownItems(){
+		const nav=document.getElementsByTagName("nav")[0];
+		const dropdownItems=nav.getElementsByClassName("dropdown-item");
+		for(let i=0; i<dropdownItems.length; i++){
+			dropdownItems[i].addEventListener("click",showSection);
 		}
 	}
-	let currentHeight=0;
-	for(const child of introChildren){
-		const childHeight=parseInt(getComputedStyle(child).getPropertyValue("height"));
-		currentHeight+=childHeight;
+
+	function initNavbarBrand(){
+		const nav=document.getElementsByTagName("nav")[0];
+		const navbarBrand=nav.getElementsByClassName('navbar-brand')[0];
+		navbarBrand.addEventListener("click",showSection);
 	}
-	const currentWidth=parseInt(getComputedStyle(document.body).getPropertyValue("width"));;
-	const bodyHeight=parseInt(getComputedStyle(document.body).getPropertyValue("height"));
-	currentHeight=Math.max(bodyHeight,currentHeight);
-	intro.style.width=currentWidth+"px";
-	intro.style.height=currentHeight+"px";
+	
+	function initNavLinks(){
+		const nav=document.getElementsByTagName("nav")[0];
+		const navLinks=nav.getElementsByClassName("nav-link");
+		for(let i=0; i<navLinks.length; i++){
+			if(navLinks[i].classList.contains("dropdown-toggle")) continue;
+			navLinks[i].addEventListener("click",showSection);
+		}
+	}
+
+	function showSection(e){
+		sectionShowing.style.display="none";
+		let targetSection;
+		if(e.target.classList.contains("dropdown-item")){
+			targetSection=document.getElementById(projectSectionId);
+		}
+		else{
+			const idArr=e.target.id.split("-");
+			const targetSectionId=idArr.slice(0,-1).join("-");
+			console.log(targetSectionId);
+			
+			targetSection=document.getElementById(targetSectionId);
+		}
+		console.log(targetSection);
+		targetSection.style.display="block";
+		sectionShowing=targetSection;
+	}
+
+	function showInitialSection(){
+		const sectionId=window.location.href.split("#")[1];
+		if(sectionId){
+			const projectIds=new Set(["split-cost","passions-quiz","animals-and-nature","lets-chat","find-princess-angela","lets-paint","maya-mathematics","maya-decimal-conversion-tool","create-profile"]);
+			if(projectIds.has(sectionId)){
+				sectionShowing=document.getElementById(projectSectionId);
+			}
+			else{
+				sectionShowing=document.getElementById(sectionId);
+			}
+		}
+		else{
+			sectionShowing=document.getElementById(homeSectionId);
+		}
+		console.log(sectionShowing);
+		sectionShowing.style.display="block";
+	}
+
+	showInitialSection();
+	initNavbarBrand();
+	initNavLinks();
+	initDropdownItems();
 }
 
 init();

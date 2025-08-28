@@ -1,4 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+	--bg-primary-color: #AB328D;
+	--bg-secondary-color: #FBEFF7;
+	--text-secondary-color:#fff;
+	--text-hover-color:#DB83BE;
+}
 
 .montserrat-400 {
   font-family: "Montserrat", sans-serif;
@@ -7,7 +14,7 @@
   font-style: normal;
 }
 
-html,body, .container-fluid{
+html,body{
 	width:100%;
 	height:100%;
 	margin:0;
@@ -17,6 +24,14 @@ html,body, .container-fluid{
 body
 {
 	font-family: "Montserrat", sans-serif;
+}
+
+nav{
+	background-color: var(--bg-primary-color);
+}
+
+nav .dropdown-menu{
+	background-color: var(--bg-secondary-color);
 }
 
 .img-fluid
@@ -30,10 +45,39 @@ body
 	color:red;
 }
 
+#home, #about-me, #contact-me, #my-skills, #my-projects{
+	display: none;
+}
+
+
+.nav-link, .nav-link{
+	color:var(--text-secondary-color);
+}
+
+a:hover, .nav-link:hover, .nav-link:focus, .nav-link:active, .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+	color:var(--text-hover-color);
+}
+
+.dropdown-item:active{
+	color:#000;
+	background-color: #fff;
+}
+
 
 @media (prefers-color-scheme: dark) {
   .dark-theme {
     color:white;
 	background-color: black;
+  }
+  nav .dropdown-menu{
+	color:white;
+	background-color: #000;
+  }
+  a, .dropdown-item{
+	color:white;
+  }
+  .dropdown-item:active{
+	color:#fff;
+	background-color: #111;
   }
 }
