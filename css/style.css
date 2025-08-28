@@ -1,4 +1,4 @@
-/*  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root{
 	--bg-primary-color: #AB328D;
@@ -12,6 +12,10 @@
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+}
+
+*{
+	box-sizing: border-box;
 }
 
 html,body{
@@ -45,11 +49,6 @@ nav .dropdown-menu{
 	color:red;
 }
 
-#home, #about-me, #contact-me, #my-skills, #my-projects{
-	display: none;
-}
-
-
 .nav-link{
 	color:var(--text-secondary-color);
 }
@@ -62,7 +61,31 @@ a:hover, .nav-link:hover, .nav-link:focus, .nav-link:active, .navbar-nav .nav-li
 	color:#000;
 	background-color: #fff;
 }
-*/
+
+#home{
+	height:100vh;
+}
+
+#home > div{
+	height:inherit;
+}
+
+#about-me .paragraph-container, #contact-me .contact-outer-container{
+	background-color:var(--bg-secondary-color);
+	box-shadow:5px 5px 5px var(--bg-primary-color);
+}
+
+#about-me .paragraph-container *, #contact-me .contact-outer-container *{
+	background-color: white;
+}
+
+#contact-me .contact-inner-container ul{
+	list-style: none;
+}
+
+/* #home, #about-me, #contact-me, #my-skills, #my-projects{
+	display: none;
+}*/
 
 @media (prefers-color-scheme: dark) {
   .dark-theme {
