@@ -14,6 +14,21 @@
   font-style: normal;
 }
 
+.montserrat-600 {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.montserrat-900 {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+
+
 *{
 	box-sizing: border-box;
 }
@@ -34,8 +49,25 @@ nav{
 	background-color: var(--bg-primary-color);
 }
 
-nav .dropdown-menu{
-	background-color: var(--bg-secondary-color);
+nav .nav-links-container{
+	background-color: white;
+}
+
+a{
+	color:var(--bg-primary-color);
+	font-weight: 500;
+}
+
+.nav-link{
+	color:#000;
+}
+
+a:hover, .nav-link:hover, .nav-link:focus, .nav-link:active, .navbar-nav .nav-link.active, .navbar-nav .nav-link.show, .dropdown-item:active{
+	color:var(--text-hover-color);
+}
+
+.dropdown-item:active{
+	background-color: #eee;
 }
 
 .img-fluid
@@ -49,19 +81,6 @@ nav .dropdown-menu{
 	color:red;
 }
 
-.nav-link{
-	color:var(--text-secondary-color);
-}
-
-a:hover, .nav-link:hover, .nav-link:focus, .nav-link:active, .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
-	color:var(--text-hover-color);
-}
-
-.dropdown-item:active{
-	color:#000;
-	background-color: #fff;
-}
-
 #home{
 	height:100vh;
 }
@@ -70,22 +89,18 @@ a:hover, .nav-link:hover, .nav-link:focus, .nav-link:active, .navbar-nav .nav-li
 	height:inherit;
 }
 
-#about-me .paragraph-container, #contact-me .contact-outer-container{
+#about-me .paragraph-container, #contact-me .contact-outer-container, #my-skills .skills-container{
 	background-color:var(--bg-secondary-color);
 	box-shadow:5px 5px 5px var(--bg-primary-color);
 }
 
-#about-me .paragraph-container *, #contact-me .contact-outer-container *{
+#about-me .paragraph-container *, #contact-me .contact-outer-container *, #my-skills .skills-container *{
 	background-color: white;
 }
 
-#contact-me .contact-inner-container ul{
+#contact-me .contact-inner-container ul, #my-skills .skills-container ul{
 	list-style: none;
 }
-
-/* #home, #about-me, #contact-me, #my-skills, #my-projects{
-	display: none;
-}*/
 
 @media (prefers-color-scheme: dark) {
   .dark-theme {
@@ -107,3 +122,4 @@ a:hover, .nav-link:hover, .nav-link:focus, .nav-link:active, .navbar-nav .nav-li
 	background-color: #111;
   }
 }
+ 
