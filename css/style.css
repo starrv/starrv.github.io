@@ -47,6 +47,9 @@ body
 
 nav{
 	background-color: var(--bg-primary-color);
+	position:fixed;
+	top:0;
+	left:0;
 }
 
 nav .nav-links-container{
@@ -62,7 +65,11 @@ a{
 	color:#000;
 }
 
-a:hover, .nav-link:hover, .nav-link:focus, .nav-link:active, .navbar-nav .nav-link.active, .navbar-nav .nav-link.show, .dropdown-item:active{
+.learn-more{
+	cursor:pointer;
+}
+
+a:hover, .nav-link:hover, .nav-link:focus, .nav-link:active, .navbar-nav .nav-link.active, .navbar-nav .nav-link.show, .dropdown-item:active, .learn-more:hover{
 	color:var(--text-hover-color);
 }
 
@@ -100,10 +107,6 @@ a:hover, .nav-link:hover, .nav-link:focus, .nav-link:active, .navbar-nav .nav-li
 
 #contact-me .contact-inner-container ul, #my-skills .skills-container ul{
 	list-style: none;
-}
-
-#my-skills{
-	display: none;
 }
 
 @media (prefers-color-scheme: dark) {
