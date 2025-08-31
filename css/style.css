@@ -109,6 +109,20 @@ a:hover, .nav-link:hover, .nav-link:focus, .nav-link:active, .navbar-nav .nav-li
 	list-style: none;
 }
 
+#my-projects .project-container .first-paragraph ~ *{
+	display: none;
+}
+
+#my-projects .project-container p.more-info button{
+	background-color: var(--bg-primary-color);
+	color:white;
+	cursor:pointer;
+}
+
+#my-projects .project-container p.more-info{
+	display: block;
+}
+
 @media (prefers-color-scheme: dark) {
   .dark-theme {
     color:white;

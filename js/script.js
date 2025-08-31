@@ -3,6 +3,7 @@ function init(){
 	const homeSectionId="home";
 	const projectSectionId="my-projects";
 
+
 	function initDropdownItems(){
 		const nav=document.getElementsByTagName("nav")[0];
 		const dropdownItems=nav.getElementsByClassName("dropdown-item");
