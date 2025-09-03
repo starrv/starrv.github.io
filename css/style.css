@@ -3,6 +3,7 @@
 :root{
 	--bg-primary-color: #AB328D;
 	--bg-secondary-color: #FBEFF7;
+	--bg-tertiary-color:#f1e8f0;
 	--text-secondary-color:#fff;
 	--text-hover-color:#DB83BE;
 }
@@ -38,6 +39,7 @@ html,body{
 	height:100%;
 	margin:0;
 	padding:0;
+	overflow-x: hidden;
 }
 
 body
@@ -69,12 +71,16 @@ a{
 	cursor:pointer;
 }
 
-a:hover, .nav-link:hover, .nav-link:focus, .nav-link:active, .navbar-nav .nav-link.active, .navbar-nav .nav-link.show, .dropdown-item:active, .learn-more:hover{
+a:hover, .nav-link:hover, .nav-link:focus, .nav-link:active, .navbar-nav .nav-link.active, .navbar-nav .nav-link.show, .dropdown-item:active, .dropdown-item:hover, .learn-more:hover{
 	color:var(--text-hover-color);
 }
 
+.dropdown-item:hover{
+	background-color: var(--bg-secondary-color);
+}
+
 .dropdown-item:active{
-	background-color: #eee;
+	background-color: var(--bg-tertiary-color);
 }
 
 .img-fluid
