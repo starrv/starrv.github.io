@@ -134,9 +134,20 @@ a:hover, .nav-link:hover, .nav-link:focus, .nav-link:active, .navbar-nav .nav-li
     color:white;
 	background-color: black;
   }
+  #about-me .paragraph-container, #contact-me .contact-outer-container, #my-skills .skills-container, #my-projects .project-container{
+	background-color:var(--bg-primary-color);
+	box-shadow:5px 5px 5px gray;
+  }
+	#about-me .paragraph-container *, #contact-me .contact-outer-container *, #my-skills .skills-container *, #my-projects .project-container *{
+	background-color: black;
+  }
+  nav .nav-links-container{
+	background-color:black;
+  }
   nav .dropdown-menu{
 	color:white;
 	background-color: #000;
+	border-color: white;
   }
   a, .dropdown-item, .nav-link{
 	color:white;
@@ -147,6 +158,9 @@ a:hover, .nav-link:hover, .nav-link:focus, .nav-link:active, .navbar-nav .nav-li
   .dropdown-item:active{
 	color:#fff;
 	background-color: #111;
+  }
+  .list-group-item{
+	color:white;
   }
 }
  
