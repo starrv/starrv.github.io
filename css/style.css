@@ -40,6 +40,8 @@ html,body{
 	margin:0;
 	padding:0;
 	overflow-x: hidden;
+	overflow-y: scroll;
+	scroll-behavior: smooth;
 }
 
 body
@@ -158,6 +160,10 @@ a:hover, .nav-link:hover, .nav-link:focus, .nav-link:active, .navbar-nav .nav-li
   .dropdown-item:active{
 	color:#fff;
 	background-color: #111;
+  }
+  .dropdown-item:hover{
+	color:#fff;
+	background-color: #222;
   }
   .list-group-item{
 	color:white;
