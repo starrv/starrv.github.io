@@ -168,5 +168,8 @@ a:hover, .nav-link:hover, .nav-link:focus, .nav-link:active, .navbar-nav .nav-li
   .list-group-item{
 	color:white;
   }
+  .dropdown-divider{
+	background-color:white;
+  }
 }
  
