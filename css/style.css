@@ -67,6 +67,11 @@ a{
 
 .nav-link{
 	color:#000;
+	transition:font-weight 2s ease-in-out;
+}
+
+.nav-link:hover{
+	font-weight: 900;
 }
 
 .learn-more{
@@ -117,6 +122,14 @@ a:hover, .nav-link:hover, .nav-link:focus, .nav-link:active, .navbar-nav .nav-li
 	list-style: none;
 }
 
+#my-skills .skills-container ul, #about-me .paragraph-container p,  #about-me .paragraph-container p, #my-projects .project-container, #contact-me{
+	transition: font-size 2s ease-in-out;
+}
+
+#my-skills .skills-container ul:hover, #my-projects .project-container:hover, #about-me .paragraph-container p:hover, #contact-me:hover{
+	font-size: 1.2em;
+}
+
 #my-projects .project-container .first-paragraph ~ *{
 	display: none;
 }
@@ -129,6 +142,18 @@ a:hover, .nav-link:hover, .nav-link:focus, .nav-link:active, .navbar-nav .nav-li
 
 #my-projects .project-container p.more-info{
 	display: block;
+}
+
+#main-title, #main-subtitle{
+	transition: font-size 2s ease-in-out;
+}
+
+#main-title:hover{
+	font-size: 6em;
+}
+
+#main-subtitle:hover{
+	font-size: 3em;
 }
 
 @media (prefers-color-scheme: dark) {
