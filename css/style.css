@@ -67,11 +67,10 @@ a{
 
 .nav-link{
 	color:#000;
-	transition:font-weight 2s ease-in-out;
 }
 
-.nav-link:hover{
-	font-weight: 900;
+.nav-link:hover, #home-link:hover{
+	font-weight: 600;
 }
 
 .learn-more{
@@ -84,6 +83,7 @@ a:hover, .nav-link:hover, .nav-link:focus, .nav-link:active, .navbar-nav .nav-li
 
 .dropdown-item:hover{
 	background-color: var(--bg-secondary-color);
+	font-weight: 600;
 }
 
 .dropdown-item:active{
