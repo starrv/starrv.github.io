@@ -123,7 +123,7 @@ a:hover, .nav-link:hover, .nav-link:focus, .nav-link:active, .navbar-nav .nav-li
 }
 
 #my-skills .skills-container ul, #about-me .paragraph-container p,  #about-me .paragraph-container p, #my-projects .project-container, #contact-me{
-	transition: font-size 2s ease-in-out;
+	transition: font-size 1s ease-in-out;
 }
 
 #my-skills .skills-container ul:hover, #my-projects .project-container:hover, #about-me .paragraph-container p:hover, #contact-me:hover{
@@ -145,7 +145,7 @@ a:hover, .nav-link:hover, .nav-link:focus, .nav-link:active, .navbar-nav .nav-li
 }
 
 #main-title, #main-subtitle{
-	transition: font-size 2s ease-in-out;
+	transition: font-size 1s ease-in-out;
 }
 
 #main-title:hover{
