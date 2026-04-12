@@ -43,3 +43,32 @@ html,body{
 	overflow-y: scroll;
 	scroll-behavior: smooth;
 }
+
+#introduction{
+	height: 100vh;
+	background-color: #F5EEEE;
+}
+ 
+hr{
+	margin:0;
+}
+
+@media (min-width: 768px){
+	#introduction > div{
+		width:75%;
+	}
+	#introduction > div >p{
+		background-color: #E8D3D3;
+	}
+}
+
+@media (min-width: 1200px){
+	#introduction{
+		background-color: #FFF;
+	}
+	#introduction > div{
+		width:50%;
+		padding:0;
+		background-color: #F5EEEE;
+	}
+}
