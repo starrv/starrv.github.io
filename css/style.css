@@ -53,6 +53,10 @@ hr{
 	margin:0;
 }
 
+#skills ul li{
+	list-style: none;
+}
+
 @media (min-width: 768px){
 	#introduction > div{
 		width:75%;
