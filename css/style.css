@@ -46,6 +46,9 @@ html,body{
 
 #introduction{
 	height: 100vh;
+}
+
+#introduction > div{
 	background-color: #F5EEEE;
 }
 
@@ -89,6 +92,9 @@ hr{
 		color:white;
 	}
 	#introduction{
+		background-color: black;
+	}
+	#introduction > div{
 		background-color: #574646;
 	}
 	#introduction > div > p{
