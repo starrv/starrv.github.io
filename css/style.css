@@ -48,21 +48,29 @@ html,body{
 	height: 100vh;
 	background-color: #F5EEEE;
 }
- 
+
+#introduction > div > p{
+	background-color: #E8D3D3;
+}
+
 hr{
 	margin:0;
 }
 
-#skills ul li{
+#skills ul li, .project-github-links{
 	list-style: none;
+}
+
+#skills ul.short-list{
+	width: 50%;
 }
 
 @media (min-width: 768px){
 	#introduction > div{
 		width:75%;
 	}
-	#introduction > div >p{
-		background-color: #E8D3D3;
+	#skills ul.short-list,#skills ul.long-list{
+		width: 100%;
 	}
 }
 
@@ -70,9 +78,20 @@ hr{
 	#introduction{
 		background-color: #FFF;
 	}
-	#introduction > div{
-		width:50%;
-		padding:0;
-		background-color: #F5EEEE;
+}
+
+@media (prefers-color-scheme: dark){
+	.dark-theme, .navbar{
+		color:white;
+		background-color: black;
+	}
+	.nav-link{
+		color:white;
+	}
+	#introduction{
+		background-color: #574646;
+	}
+	#introduction > div > p{
+		background-color: #AF8C8C;
 	}
 }
