@@ -60,8 +60,12 @@ hr{
 	margin:0;
 }
 
-#skills ul li, .project-github-links{
-	list-style: none;
+#projects ul li{
+	list-style: disc;
+}
+
+#skills ul li, ul.project-github-links li{
+	list-style: none !important;
 }
 
 #skills ul.short-list{
