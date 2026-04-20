@@ -47,10 +47,10 @@ These skills led to me teaching numerous courses in software development includi
     
     <div class="dark-theme container-fluid p-0 m-0">
 
-       <nav class="dark-theme navbar navbar-expand-lg">
+       <nav class="navbar navbar-expand-lg bg-light" data-bs-theme="light">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
-            <img class="img-fluid img-thumbnail" src="https://project-images-vs.s3.amazonaws.com/images/developer-icon.png" width="32" height="32">
+            <img class="img-fluid img-thumbnail" src="https://project-images-vs.s3.amazonaws.com/images/developer-icon.png" width="32" height="32" alt="logo">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -66,8 +66,47 @@ These skills led to me teaching numerous courses in software development includi
               <li class="nav-item">
                 <a class="nav-link" href="#projects">Projects</a>
               </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Resumes
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="nav-link" href="https://public-docs-vs.s3.us-east-1.amazonaws.com/resumes/Valencia_S_Tech_Resume.pdf" target="_blank">Technical Resume</a></li>
+                  <li><a class="nav-link" href="https://public-docs-vs.s3.us-east-1.amazonaws.com/resumes/Valencia-S-Teacher-Resume.pdf" target="_blank">Technical Instructor Resume</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+       <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img class="img-fluid img-thumbnail" src="https://project-images-vs.s3.amazonaws.com/images/developer-icon.png" width="32" height="32" alt="logo">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav d-flex justify-content-end align-items-center w-100 montserrat-900">
               <li class="nav-item">
-                <a class="nav-link" href="https://public-docs-vs.s3.us-east-1.amazonaws.com/resumes/Valencia_S_Tech_Resume.pdf" target="_blank">Resume</a>
+                <a class="nav-link" href="#about">About</a>
+              </li>
+             <li class="nav-item">
+                <a class="nav-link" href="#skills">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projects">Projects</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Resumes
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="nav-link" href="https://public-docs-vs.s3.us-east-1.amazonaws.com/resumes/Valencia_S_Tech_Resume.pdf" target="_blank">Technical Resume</a></li>
+                  <li><a class="nav-link" href="https://public-docs-vs.s3.us-east-1.amazonaws.com/resumes/Valencia-S-Teacher-Resume.pdf" target="_blank">Teacher Resume</a></li>
+                </ul>
               </li>
             </ul>
           </div>
@@ -89,22 +128,42 @@ These skills led to me teaching numerous courses in software development includi
                 <ul class="nav justify-content-center">
                   <li class="nav-item">
                     <a class="nav-link" href="tel:+13477706819" target="_blank">
-                      <img src="./images/phone-logo.png" width="16" height="16" alt="phone logo link">
+                      <picture>
+                        <source
+                          srcset="./images/phone-logo-white.png"
+                          media="(prefers-color-scheme: dark)" />
+                        <img src="./images/phone-logo.png" width="16" height="16" alt="phone logo link">
+                      </picture>
                     </a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="mailto:starrv2011@gmail.com" target="_blank">
-                      <img src="./images/email-logo.png" width="16" height="16" alt="email logo link">
+                      <picture>
+                        <source
+                          srcset="./images/email-logo-white.png"
+                          media="(prefers-color-scheme: dark)" />
+                        <img src="./images/email-logo.png" width="16" height="16" alt="email logo link">
+                      </picture>
                     </a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="https://linkedin.com/in/vastarr/starrv" target="_blank">
-                    <img src="./images/linkedin-logo.png" width="16" height="16" alt="LinkedIn logo link">
+                      <picture>
+                         <source
+                          srcset="./images/linkedin-logo-white.png"
+                          media="(prefers-color-scheme: dark)" />
+                        <img src="./images/linkedin-logo.png" width="16" height="16" alt="LinkedIn logo link">
+                      </picture>
                     </a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="https://github.com/starrv" target="_blank">
-                      <img src="./images/github-logo.png" width="16" height="16" alt="GitHub logo link">
+                      <picture>
+                        <source
+                          srcset="./images/github-logo-white.png"
+                          media="(prefers-color-scheme: dark)" />
+                        <img src="./images/github-logo.png" width="16" height="16" alt="GitHub logo link">
+                      </picture>
                     </a>
                   </li>
                 </ul>

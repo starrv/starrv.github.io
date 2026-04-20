@@ -44,6 +44,14 @@ html,body{
 	scroll-behavior: smooth;
 }
 
+.navbar.bg-light{
+	background-color: #fff !important;
+}
+
+.navbar.bg-dark{
+	display: none;
+}
+
 #introduction{
 	height: 100vh;
 }
@@ -76,10 +84,6 @@ hr{
 	background-color: #F5EEEE;
 }
 
-a{
-	color:#000;
-}
-
 @media (min-width: 768px){
 	#introduction > div{
 		width:75%;
@@ -96,12 +100,16 @@ a{
 }
 
 @media (prefers-color-scheme: dark){
+	.navbar.bg-dark{
+		display: block;
+		background-color: #000 !important;
+	}
+	.navbar.bg-light{
+		display: none;
+	}
 	.dark-theme, .navbar{
 		color:white;
 		background-color: black;
-	}
-	.nav-link{
-		color:white;
 	}
 	#introduction{
 		background-color: black;
@@ -115,10 +123,7 @@ a{
 	#projects .project:hover{
 		background-color: #574646;
 	}
-	a{
-		color: #fff;
-	}
-	.nav-link:focus, .nav-link:hover{
-		color:#eee;
+	.nav-link{
+		color:#fff;
 	}
 }
