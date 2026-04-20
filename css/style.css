@@ -72,6 +72,14 @@ hr{
 	width: 50%;
 }
 
+#projects .project:hover{
+	background-color: #E8D3D3;
+}
+
+a{
+	color:#000;
+}
+
 @media (min-width: 768px){
 	#introduction > div{
 		width:75%;
@@ -103,5 +111,14 @@ hr{
 	}
 	#introduction > div > p{
 		background-color: #AF8C8C;
+	}
+	#projects .project:hover{
+		background-color: #AF8C8C;
+	}
+	a{
+		color: #fff;
+	}
+	.nav-link:focus, .nav-link:hover{
+		color:#eee;
 	}
 }
