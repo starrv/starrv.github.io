@@ -73,7 +73,7 @@ hr{
 }
 
 #projects .project:hover{
-	background-color: #E8D3D3;
+	background-color: #F5EEEE;
 }
 
 a{
@@ -113,7 +113,7 @@ a{
 		background-color: #AF8C8C;
 	}
 	#projects .project:hover{
-		background-color: #AF8C8C;
+		background-color: #574646;
 	}
 	a{
 		color: #fff;
