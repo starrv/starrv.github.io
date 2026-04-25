@@ -84,6 +84,10 @@ hr{
 	background-color: #F5EEEE;
 }
 
+.show{
+	text-align: center;
+}
+
 @media (min-width: 768px){
 	#introduction > div{
 		width:75%;
@@ -107,7 +111,7 @@ hr{
 	.navbar.bg-light{
 		display: none;
 	}
-	.dark-theme, .navbar{
+	.dark-theme, .navbar, .dropdown-menu{
 		color:white;
 		background-color: black;
 	}
