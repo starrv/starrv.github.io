@@ -77,7 +77,7 @@ hr{
 }
 
 #skills ul.short-list{
-	width: 50%;
+	
 }
 
 #projects .project:hover{
@@ -91,9 +91,6 @@ hr{
 @media (min-width: 768px){
 	#introduction > div{
 		width:75%;
-	}
-	#skills ul.short-list,#skills ul.long-list{
-		width: 100%;
 	}
 }
 
