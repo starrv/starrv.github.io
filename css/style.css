@@ -88,7 +88,7 @@ hr{
 	color:#806969;
 }
 
-.project a:hover, .nav-link:hover,.nav-link:focus,.nav-link:active{
+.project a:hover, .nav-link:hover,.nav-link:focus,.nav-link:active,.navbar-nav .nav-link.show{
 	color:#ab9393;
 }
 
@@ -134,7 +134,7 @@ hr{
 	.project a, .nav-link{
 		color:#e6dcdc;
 	}
-	.project a:hover, .nav-link:hover,.nav-link:focus{
+	.project a:hover, .nav-link:hover,.nav-link:focus,.navbar-nav .nav-link.show{
 		color:#f5f0f0;
 	}
 }
