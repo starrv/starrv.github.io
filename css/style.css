@@ -84,6 +84,14 @@ hr{
 	text-align: center;
 }
 
+.project a, .nav-link{
+	color:#806969;
+}
+
+.project a:hover, .nav-link:hover,.nav-link:focus,.nav-link:active{
+	color:#ab9393;
+}
+
 @media (min-width: 768px){
 	#introduction > div{
 		width:75%;
@@ -122,5 +130,11 @@ hr{
 	}
 	.nav-link{
 		color:#fff;
+	}
+	.project a, .nav-link{
+		color:#e6dcdc;
+	}
+	.project a:hover, .nav-link:hover,.nav-link:focus{
+		color:#f5f0f0;
 	}
 }
