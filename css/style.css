@@ -92,6 +92,10 @@ hr{
 	color:#ab9393;
 }
 
+.dropdown-item{
+	white-space: normal;
+}
+
 @media (min-width: 768px){
 	#introduction > div{
 		width:75%;
