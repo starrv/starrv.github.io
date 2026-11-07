@@ -92,6 +92,10 @@ hr{
 	color:#ab9393;
 }
 
+nav ul .list-group-item{
+	background:inherit;
+}
+
 @media (min-width: 768px){
 	#introduction > div{
 		width:75%;
