@@ -76,8 +76,12 @@ hr{
 	list-style: none !important;
 }
 
+#projects .project{
+	background: #F5EEEE;;
+}
+
 #projects .project:hover{
-	background-color: #F5EEEE;
+	background: radial-gradient(#fff,#F5EEEE);
 }
 
 .show{
@@ -129,8 +133,11 @@ nav ul .list-group-item{
 	#introduction > div > p{
 		background-color: #AF8C8C;
 	}
+	#projects .project{
+		background: #574646;
+	}
 	#projects .project:hover{
-		background-color: #574646;
+		background: radial-gradient(#000,#574646);
 	}
 	.nav-link{
 		color:#fff;
